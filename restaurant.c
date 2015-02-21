@@ -183,23 +183,26 @@ boolean doesNameExist(Node *root, char name[]){
 void addToList(Node **root, Node **end, char name[], int size, int status){
   int i;
 
+	// If list is empty, create new node
 	if(*root == NULL){
 		*root = (Node*)malloc(sizeof(Node));
 		*end = *root;
 	}
+	// Else, append to linked list
 	else{
 		(*end)->next = (Node*)malloc(sizeof(Node));
 		*end = (*end)->next;
 	}
 
 	i = 0;
+	// Copy new name into node element 'Name'
 	while(name[i] != '\0'){
 		(*end)->Name[i] = name[i];
 		i++;
 	}
 	(*end)->Size = size;
 	(*end)->Status = status;
-	(*end)->next = NULL;
+	(*end)->next = NULL; // Tail->next always points to NULL
 }
 
 
@@ -481,25 +484,25 @@ int main (int argc, char **argv){
        		printf ("Quitting Program\n");
        		return (0);
       	}
-    	else if ('?' == ch){
+    	else if ('?' == ch){ // Information
        		printCommands();
       	}
-    	else if('a' == ch){
+    	else if('a' == ch){ // Append new group as available in restaurant
        		doAdd(&root, &end);
       	} 
-    	else if('c' == ch){
+    	else if('c' == ch){ // Append new group as call-ahead reservation
        		doCallAhead(&root, &end);
       	} 
-    	else if('w' == ch){
+    	else if('w' == ch){ // Change group status to available in restaurant
        		doWaiting(&root);
       	} 
-    	else if('r' == ch){
+    	else if('r' == ch){ // Retrieve first group that can fit in available table
        		doRetrieve(&root, &end);
       	} 
-    	else if('l' == ch){
+    	else if('l' == ch){ // List all groups ahead of a given group name
        		doList(root);
       	} 
-    	else if('d' == ch){
+    	else if('d' == ch){ // Display entire waiting list
        		doDisplay(root);
       	} 
     	else{
