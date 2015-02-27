@@ -273,7 +273,7 @@ int main(int argc, char* argv[]){
 		hash[i] = NULL;
 	}
   int check;
-printf ("Enter command: ");
+printf ("Enter command (<?> for available commands): ");
 
     while ((ch = getNextNWSChar ()) != EOF){
         // check for quit 
@@ -328,7 +328,7 @@ printf ("Enter command: ");
 		if(debug == TRUE){
 			list(hash, size);
 		}
-		printf ("\nEnter command: ");
+		printf ("\nEnter command (<?> for available commands): ");
 	}
 	printf ("Quiting Program - EOF reached\n");
 	return 0;

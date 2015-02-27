@@ -493,7 +493,7 @@ int main (int argc, char **argv){
 	}
 
  	printf ("Starting Restaurant Wait List Program\n\n");
- 	printf ("Enter command: ");
+ 	printf ("Enter command (<?> for available commands): ");
 
  	while ((ch = getNextNWSChar ()) != EOF){
     	/* check for quit */
@@ -529,7 +529,7 @@ int main (int argc, char **argv){
       	}
 		if(debug == TRUE)
 			displayListInformation(root);
-    	printf ("\nEnter command: ");
+    	printf ("\nEnter command (<?> for available commands): ");
    	}
 
 	printf ("Quiting Program - EOF reached\n");
