@@ -1,3 +1,18 @@
+/***********************************
+* Author: Abraheem Irheem
+*
+* Class: CS 211, FALL 2014
+*
+* System: g++ on Ubuntu 64bit
+*
+* Program: Parentheses
+*
+* The program asks the user to input an expresion
+* ex: [a()<ab>{}]
+* the program checks if all parentheses are balanced.
+* 
+************************************/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

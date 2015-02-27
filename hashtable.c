@@ -1,3 +1,15 @@
+/***********************************
+* Author: Abraheem Irheem
+*
+* Class: CS 211, FALL 2014
+*
+* System: g++ on Ubuntu 64bit
+*
+* Program: Hash Table
+*
+* 
+************************************/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

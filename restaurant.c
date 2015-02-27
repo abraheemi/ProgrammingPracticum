@@ -1,3 +1,20 @@
+/***********************************
+* Author: Abraheem Irheem
+*
+* Class: CS 211, FALL 2014
+*
+* System: g++ on Ubuntu 64bit
+*
+* Program: Restaurant
+*
+* This program implements a restaurant waiting list.
+* The user is prompted to enter a command to perform
+* a certain operation on the waiting list.
+* Operations include adding a group, deleting a group,
+* listing groups, etc...
+* 
+************************************/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
