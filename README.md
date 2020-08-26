@@ -1,2 +1,2 @@
 # ProgrammingPracticum
-Projects done as part of Programming Practicum in UIC (C and Java)
+Programming Practicum (C and Java)
